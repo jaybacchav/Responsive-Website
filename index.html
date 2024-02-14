@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Course Learning Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Your custom CSS (if any) -->
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header Section -->
+        
+        <header class="text-center mt-4">
+            <h1>Online Courses</h1>
+        </header>
+
+        <!-- Language Selection -->
+        <div class="text-right mb-3">
+            <label for="languageSelect">Select Language:</label>
+            <select id="languageSelect" class="form-control form-control-sm" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <!-- Add more language options as needed -->
+            </select>
+        </div>
+
+        <!-- Course Structure -->
+        <div class="row">
+            <!-- Sidebar for Navigation -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#HTML Course">
+                                HTML Course
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Python Course">
+                                Python Course
+                            </a>
+                            <!-- Add more sections and subsections as needed -->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <!-- Video Player for Course Content -->
+                <div id="player" class="mb-4">
+                    <!-- Integrate your video/audio player here (e.g., using HTML5 video/audio tags) -->
+                </div>
+
+                <!-- Content for Sections/Subsections -->
+                <section id="HTML Course">
+                    <h2>HTML Course</h2>
+                    <p>Content for Section 1 goes here. <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU&t=199s" target="_blank">Learn More</a></p>
+                </section>
+
+                <section id="Python Course">
+                    <h2>Python Course</h2>
+                    <p>Content for Section 2 goes here. <a href="https://www.youtube.com/watch?v=kqtD5dpn9C8" target="_blank">Learn More</a></p>
+                </section>
+                <!-- Add more sections and subsections as needed -->
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
